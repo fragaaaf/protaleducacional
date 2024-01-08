@@ -24,3 +24,6 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 * Relação crescente dos estudantes com maior nota na atividade [Obj.: criar classificação por atividade]
 * Relação crescente dos estudantes com maiores médias. [Obj.: criar classificação geral]
 * Relação dos estudantes que mais acessaram ao portal [Obj.: criar classificação]
+* Quantas questões tenho de cada assunto? [Obj.: gerenciar o excesso ou a falta de perguntas sobre o assunto]
+* 
+
