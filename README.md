@@ -12,4 +12,15 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 ## Pendências
  - [ ] Lembrete: DrawSQL permite apenas 15 tabelas
  - [ ] Tabela Alternativa deu lugar a Tabela Alocação
- - [ ] Tabela Curso deu lugar a Tabela Pessoa
+ - [ ] Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)
+
+## Consultas requeridas
+* Quais os estudantes fizeram a atividade? [Obj.: Saber a frequência do estudante nas atividades ao longo do tempo]
+* Quais estudantes NÃO fizeram a atividade? [Obj.: ter lista de quais estão com pendências nas atividades]
+* Quais estudantes  - QUE FIZERAM - não obteram nota acima de 6? [Obj.: quem apresenta dificuldade - estatística]
+* Quais (RE)FIZERAM as novas atividades sugeridas pelo portal? [Obj.: quem foi persistente?]
+* Quais estudantes tiraram 10. [Obj.: destacar o empenho].
+* Relação decrescente das questões(assuntos) mais erradas [Obj.: saber onde a turma mais errou].
+* Relação crescente dos estudantes com maior nota na atividade [Obj.: criar classificação por atividade]
+* Relação crescente dos estudantes com maiores médias. [Obj.: criar classificação geral]
+* Relação dos estudantes que mais acessaram ao portal [Obj.: criar classificação]
