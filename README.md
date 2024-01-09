@@ -11,9 +11,10 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   - [x] 03 - Não houve mentoria
   - [x] 02 - Uso da ferramenta DrawSQL para geração da modelagem
 </details>
-~~~ dezembro/2023
+<details> 
+   <summary>dezembro/2023</summary>
  - [x] 29 - Modelagem física(rascunho) do BD da aplicação
-~~~
+</details>
  ## Tarefas
  ### 08/01/2024 - nº 02/02
  - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
