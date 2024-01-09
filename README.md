@@ -13,6 +13,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 </details>
 <details> 
    <summary>dezembro/2023</summary>
+ 
    - [x] 29 - Modelagem física(rascunho) do BD da aplicação
 </details>
 
@@ -41,8 +42,8 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x]  ~~Lembrete: DrawSQL permite apenas 15 tabelas~~
  - [x] ~~Tabela Alternativa deu lugar a Tabela Alocação~~
  - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
-
-## Consultas requeridas
+<details>
+<summary>## Consultas requeridas</summary>
 * Quais os **estudantes** fizeram a atividade? [Obj.: Saber a frequência do estudante nas atividades ao longo do tempo]
 * Quais **estudantes** NÃO fizeram a atividade? [Obj.: ter lista de quais estão com pendências nas atividades]
 * Quais **estudantes**  - QUE FIZERAM - não obteram nota acima de 6? [Obj.: quem apresenta dificuldade - estatística]
@@ -59,7 +60,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 * Quais as **notas do estudante** no módulo?
 * Qual a **média final** do estudante no módulo?
 * 
-
+</details>
   <a id="modelagemDBDiagram.io"></a>
 # Anexo I - Comando do DBDiagram.io
 [Topo](#topo)
