@@ -1,18 +1,21 @@
  <a id="topo"></a>
 # protaleducacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
+ ## Mentoria de ![Arthur Henrique](github.com/artu.hnrq) 
+ ### 08/01/2024 - nº 02/02
+ - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
  ## Tarefas
  ### 08/01/2024 - nº 02/02
- - [ ] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
-  *  - [ ] Consultar ![documentação do DbDiagram.io](https://dbml.dbdiagram.io/docs/#index-settings)
-     - [ ] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
-  *  - [x] Modelagem escrita (Falta aparecer o diagrama).
-  *  - [ ] Detalhes sobre a configuração.
-  *  - [ ] [Código do Diagrama (abaixo)](#modelagemDBDiagram.io)
-  *  - [ ] [Documentação de Consulta](#doc) 
+ - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
+  *  - [x] Consultar ![documentação do DbDiagram.io](https://dbml.dbdiagram.io/docs/#index-settings)
+     - [x] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
+  *  - [x] ![Modelagem DBDiagram.io concluida](https://dbdiagram.io/d/portal_educ-659c5f01ac844320ae7c62ae)
+  *  - [x] Erros ou falhas corrigidas.
+  *  - [x] [Código do Diagrama (abaixo)](#modelagemDBDiagram.io)
+  *  - [x] [Documentação de Consulta](#doc) 
 
  ### 08/01/2024- nº 01/02
- - [ ] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
+ - [x] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
   *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acsso as tabelas do banco de dados]
   *  - [x] Apagadas as Tabelas **Estudante** e **Professor** por não serem mais necessárias.
   *  - [x] ~~Feitas as relações (um para muitos) das Tabelas Estudantes e Professor para a Tabela auth.users~~
@@ -28,16 +31,22 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
 
 ## Consultas requeridas
-* Quais os estudantes fizeram a atividade? [Obj.: Saber a frequência do estudante nas atividades ao longo do tempo]
-* Quais estudantes NÃO fizeram a atividade? [Obj.: ter lista de quais estão com pendências nas atividades]
-* Quais estudantes  - QUE FIZERAM - não obteram nota acima de 6? [Obj.: quem apresenta dificuldade - estatística]
-* Quais (RE)FIZERAM as novas atividades sugeridas pelo portal? [Obj.: quem foi persistente?]
-* Quais estudantes tiraram 10. [Obj.: destacar o empenho].
-* Relação decrescente das questões(assuntos) mais erradas [Obj.: saber onde a turma mais errou].
-* Relação crescente dos estudantes com maior nota na atividade [Obj.: criar classificação por atividade]
-* Relação crescente dos estudantes com maiores médias. [Obj.: criar classificação geral]
-* Relação dos estudantes que mais acessaram ao portal [Obj.: criar classificação]
-* Quantas questões tenho de cada assunto? [Obj.: gerenciar o excesso ou a falta de perguntas sobre o assunto]
+* Quais os **estudantes** fizeram a atividade? [Obj.: Saber a frequência do estudante nas atividades ao longo do tempo]
+* Quais **estudantes** NÃO fizeram a atividade? [Obj.: ter lista de quais estão com pendências nas atividades]
+* Quais **estudantes**  - QUE FIZERAM - não obteram nota acima de 6? [Obj.: quem apresenta dificuldade - estatística]
+* Quais **estudantes** (RE)FIZERAM as novas atividades sugeridas pelo portal? [Obj.: quem foi persistente?]
+* Quais **estudantes** tiraram 10. [Obj.: destacar o empenho].
+* Relação decrescente das **questões(assuntos)** mais erradas [Obj.: saber onde a turma mais errou].
+* Relação crescente dos **estudantes** com maior nota na atividade [Obj.: criar classificação por atividade]
+* Relação crescente dos **estudantes** com maiores médias. [Obj.: criar classificação geral]
+* Relação dos **estudantes** que mais acessaram ao portal [Obj.: criar classificação]
+* Quantas **questões** tenho de cada assunto? [Obj.: gerenciar o excesso ou a falta de perguntas sobre o assunto]
+* Quais são os **professores** estão na turma?
+* Quais as **disciplinas** da turma?
+* Quais **professores ministram(ou ministraram) as disciplinas** na turma?
+* Quais as **notas do estudante** no módulo?
+* Qual a **média final** do estudante no módulo?
+* 
 
   <a id="modelagemDBDiagram.io"></a>
 # Anexo I - Comando do DBDiagram.io
