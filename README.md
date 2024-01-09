@@ -160,3 +160,4 @@ Ref: users.id < follows.followed_user_id
 # Anexo II - Documentação de consulta
 
 *[Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
+*[Guia básico de Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
