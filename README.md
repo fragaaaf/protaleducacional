@@ -62,9 +62,14 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 * Qual a **média final** do estudante no módulo?
 * 
 </details>
+
   <a id="modelagemDBDiagram.io"></a>
 # Anexo I - Comando do DBDiagram.io
 [Topo](#topo)
+
+<details>
+<summary>Código da Modelagem</summary>
+ 
 ```
 // Use DBML to define your database structure
 // Docs: https://dbml.dbdiagram.io/docs
@@ -80,8 +85,8 @@ Table auth.users {
 
 Table resultado {
   id integer [primary key]
-  id_estudante_fk integer [foreign key]
-  id_atividade_fk integer [foreign key]
+  id_estudante_fk integer [ref:> auth.users.id]
+  id_atividade_fk integer [ref:> atividade.id]
   nrAcessos integer
   data timestamp
   acertos integer
@@ -97,20 +102,20 @@ Table disciplina {
 
 Table modulo {
   id integer [primary key]
-  id_disciplina_fk integer
-  id_curso_fk integer
+  id_disciplina_fk integer [ref:>  disciplina.id]
+  id_curso_fk integer [ref:> curso.id]
 }
 
 Table atividade{
   id integer [primary key]
-  id_disciplina_fk integer
+  id_disciplina_fk integer [ref:> disciplina.id]
   sigla varchar
   tipo varchar
 }
 
 Table assunto {
   id integer [primary key]
-  id_disciplina_fk integer
+  id_disciplina_fk integer [ref:>  disciplina.id]
   objetivo varchar
   explicacao varchar
   exemplo varchar
@@ -120,66 +125,62 @@ Table curso {
   id integer [primary key]
   nome varchar
   sigla varchar
-
 }
 
 Table professor_disciplina {
   id integer [primary key]
-  id_disciplina_fk integer [foreign key]
-  id_professor_fk integer [foreign key]
+  id_disciplina_fk integer [ref:> disciplina.id]
+  id_professor_fk integer [ref:>  auth.users.id]
 }
 
 Table alocacao {
   id integer [primary key]
-  id_profesor_disciplina_fk integer [foreign key]
-  id_turma_modulo_fk integer [foreign key]
+  id_profesor_disciplina_fk integer [ref:>  professor_disciplina.id]
+  id_turma_modulo_fk integer [ref:>  turma_modulo.id]
 }
 
 Table turma_modulo {
   id integer [primary key]
-  id_turma_fk integer [foreign key]
-  id_modulo_fk integer [foreign key]
+  id_turma_fk integer [ref:> turma.id]
+  id_modulo_fk integer [ref:> modulo.id]
   semestre integer
 }
 Table turma {
   id integer [primary key]
-  id_curso_fk integer
+  id_curso_fk integer [ref:> curso.id]
   sigla varchar
 }
 
 Table atividade_questao {
   id integer [primary key]
-  id_atividade_fk integer [foreign key]
-  id_questao_fk integer [foreign key]
+  id_atividade_fk integer [ref:> atividade.id]
+  id_questao_fk integer [ref:> questao.id]
 }
 
 Table questao_assunto {
   id integer [primary key]
-  id_assunto_fk integer [foreign key]
-  id_questao_fk integer [foreign key]
+  id_assunto_fk integer [ref:> assunto.id]
+  id_questao_fk integer [ref:> questao.id]
 }
 
 Table questao {
   id integer [primary key]
-  id_alternativa_fk integer
+  id_alternativa_fk integer [ref:> alternativa.id]
   enunciado varchar
   gabarito varchar
 }
 
-Table curso {
+Table alternativa {
   id integer [primary key]
-  nome varchar
+  alternativa varchar
 }
-
-Ref: posts.user_id > users.id // many-to-one
-
-Ref: users.id < follows.following_user_id
-
-Ref: users.id < follows.followed_user_id
-
 ```
+</details>
+
 [Topo](#topo)
+
  <a id="doc"></a>
+
 # Anexo II - Documentação de consulta
 
 * [Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
