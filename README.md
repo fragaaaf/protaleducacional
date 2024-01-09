@@ -1,12 +1,14 @@
 # protaleducacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
+ <a id="topo"></a>
  ## Tarefas
  ### 08/01/2024 - nº 02/02
  - [ ] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   *  - [ ] Consultar ![documentação do DbDiagram.io](https://dbml.dbdiagram.io/docs/#index-settings)
      - [ ] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
-  *  - [x] Modelagem escrita (Falta aparecer o diagrama.
+  *  - [x] Modelagem escrita (Falta aparecer o diagrama).
   *  - [ ] Detalhes sobre a configuração.
+  *  - [ ] [Código do Diagrama](#modelagemDBDiagram.io)
 
  ### 08/01/2024- nº 01/02
  - [ ] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
@@ -18,7 +20,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x] Sintetizar brevemente aprendizados em markdown num repositorio no github.
  - [x] Compartilhar acesso a esse repositório com artu-hnrq.
  
- - ![Modelagem do Banco de Dados no **DrawSQL**](https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
+ - ![Modelagem do Banco de Dados no DrawSQL](https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
 ## Pendências
  - [ ] Lembrete: DrawSQL permite apenas 15 tabelas
  - [ ] Tabela Alternativa deu lugar a Tabela Alocação
@@ -35,7 +37,8 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 * Relação crescente dos estudantes com maiores médias. [Obj.: criar classificação geral]
 * Relação dos estudantes que mais acessaram ao portal [Obj.: criar classificação]
 * Quantas questões tenho de cada assunto? [Obj.: gerenciar o excesso ou a falta de perguntas sobre o assunto]
-* 
+
+  <a id="modelagemDBDiagram.io"></a>
 # Anexo I - Comando do DBDiagram.io
 ```
 // Use DBML to define your database structure
@@ -150,3 +153,4 @@ Ref: users.id < follows.following_user_id
 Ref: users.id < follows.followed_user_id
 
 ```
+[Topo](#topo)
