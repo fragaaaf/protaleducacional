@@ -5,12 +5,8 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [ ] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   *  - [ ] Consultar ![documentação do DbDiagram.io](https://dbml.dbdiagram.io/docs/#index-settings)
      - [ ] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
-  *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acsso as tabelas do banco de dados]
-  *  - [x] Apagadas as Tabelas **Estudante** e **Professor** por não serem mais necessárias.
-  *  - [x] ~~Feitas as relações (um para muitos) das Tabelas Estudantes e Professor para a Tabela auth.users~~
-  *  - [X] Criadas as relações **auth.users.id -> Resultado.id_estudante_fk** e **auth.users.id-> Professor_disciplina.id_professor_fk**
-  *  - [X] Recriadas as **Tabelas Alternativa** e **Tabela Curso**. 
- - [x] Sintetizar brevemente aprendizados em markdown num repositorio no github.
+  *  - [x] Modelagem escrita (Falta aparecer o diagrama.
+  *  - [ ] Detalhes sobre a configuração.
 
  ### 08/01/2024- nº 01/02
  - [ ] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
