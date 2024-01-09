@@ -2,14 +2,15 @@
 # protaleducacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
-  ~~~ janeiro/2024
+  <details> 
+   <summary>janeiro/2024</summary>
 
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   - [x] 05 - Exportar as pessoas para a tabela auth.users
   - [x] 04 - Criação da Tabela Alocação para gerar histórico do curso
   - [x] 03 - Não houve mentoria
   - [x] 02 - Uso da ferramenta DrawSQL para geração da modelagem
-~~~
+</details>
 ~~~ dezembro/2023
  - [x] 29 - Modelagem física(rascunho) do BD da aplicação
 ~~~
