@@ -4,6 +4,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
   <details> 
    <summary>janeiro/2024</summary>
+   
   - [ ] 30 - agendada
   - [ ] 29 - Agendada
   - [ ] 26 - Agendada
