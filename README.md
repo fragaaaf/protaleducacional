@@ -1,6 +1,6 @@
+ <a id="topo"></a>
 # protaleducacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
- <a id="topo"></a>
  ## Tarefas
  ### 08/01/2024 - nº 02/02
  - [ ] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
@@ -9,6 +9,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   *  - [x] Modelagem escrita (Falta aparecer o diagrama).
   *  - [ ] Detalhes sobre a configuração.
   *  - [ ] [Código do Diagrama (abaixo)](#modelagemDBDiagram.io)
+  *  - [ ] [Documentação de Consulta](#doc) 
 
  ### 08/01/2024- nº 01/02
  - [ ] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
@@ -155,3 +156,7 @@ Ref: users.id < follows.followed_user_id
 
 ```
 [Topo](#topo)
+ <a id="doc"></a>
+# Anexo II - Documentação de consulta
+
+*[Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
