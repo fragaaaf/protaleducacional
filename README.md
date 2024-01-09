@@ -42,6 +42,9 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x]  ~~Lembrete: DrawSQL permite apenas 15 tabelas~~
  - [x] ~~Tabela Alternativa deu lugar a Tabela Alocação~~
  - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
+
+##Consultas requeridas
+
 <details>
 <summary>Consultas requeridas</summary>
  
