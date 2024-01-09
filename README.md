@@ -18,7 +18,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x] Sintetizar brevemente aprendizados em markdown num repositorio no github.
  - [x] Compartilhar acesso a esse repositório com artu-hnrq.
  
- - ![Modelagem do Banco de Dados](https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
+ - ![Modelagem do Banco de Dados no **DrawSQL**](https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
 ## Pendências
  - [ ] Lembrete: DrawSQL permite apenas 15 tabelas
  - [ ] Tabela Alternativa deu lugar a Tabela Alocação
