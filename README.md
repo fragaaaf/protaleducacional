@@ -4,7 +4,19 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
   <details> 
    <summary>janeiro/2024</summary>
-
+  - [ ] 30 - agendada
+  - [ ] 29 - Agendada
+  - [ ] 26 - Agendada
+  - [ ] 25 - Agendada
+  - [ ] 23 - Agendada
+  - [ ] 22 - Agendada
+  - [ ] 19 - Agendada
+  - [ ] 18 - Agendada
+  - [ ] 16 - Agendada
+  - [ ] 15 - Agendada
+  - [ ] 12 - Agendada
+  - [ ] 11 - Agendada
+  - [ ] 09 - Agendada
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   - [x] 05 - Exportar as pessoas para a tabela auth.users
   - [x] 04 - Criação da Tabela Alocação para gerar histórico do curso
