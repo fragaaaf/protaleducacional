@@ -1,5 +1,5 @@
  <a id="topo"></a>
-# protaleducacional
+# Portal Educacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
   <details> 
