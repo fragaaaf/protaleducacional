@@ -2,8 +2,14 @@
 # protaleducacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
- ### 08/01/2024 - nº 02/02
- - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
+ ### janeiro/2024
+  - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
+  - [x] 05 - Exportar as pessoas para a tabela auth.users
+  - [x] 04 - Criação da Tabela Alocação para gerar histórico do curso
+  - [x] 03 - Não houve mentoria
+  - [x] 02 - Uso da ferramenta DrawSQL para geração da modelagem
+### dezembro/2023
+ - [x] 29 - Modelagem física(rascunho) do BD da aplicação 
  ## Tarefas
  ### 08/01/2024 - nº 02/02
  - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
@@ -16,7 +22,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 
  ### 08/01/2024- nº 01/02
  - [x] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
-  *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acsso as tabelas do banco de dados]
+  *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acesso as tabelas do banco de dados]
   *  - [x] Apagadas as Tabelas **Estudante** e **Professor** por não serem mais necessárias.
   *  - [x] ~~Feitas as relações (um para muitos) das Tabelas Estudantes e Professor para a Tabela auth.users~~
   *  - [X] Criadas as relações **auth.users.id -> Resultado.id_estudante_fk** e **auth.users.id-> Professor_disciplina.id_professor_fk**
