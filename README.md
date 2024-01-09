@@ -31,7 +31,10 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 </details>
 
  ## Tarefas
- ### 08/01/2024 - nº 02/02
+
+<details>
+<summary>08/01/2024 - nº 02/02</summary>
+
  - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   *  - [x] Consultar ![documentação do DbDiagram.io](https://dbml.dbdiagram.io/docs/#index-settings)
      - [x] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
@@ -39,8 +42,11 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   *  - [x] Erros ou falhas corrigidas.
   *  - [x] [Código do Diagrama (abaixo)](#modelagemDBDiagram.io)
   *  - [x] [Documentação de Consulta](#doc) 
+</details>
 
- ### 08/01/2024- nº 01/02
+<details>
+<summary>08/01/2024- nº 01/02</summary>
+
  - [x] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
   *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acesso as tabelas do banco de dados]
   *  - [x] Apagadas as Tabelas **Estudante** e **Professor** por não serem mais necessárias.
@@ -56,6 +62,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x] ~~Tabela Alternativa deu lugar a Tabela Alocação~~
  - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
 
+</details>
 ## Consultas requeridas
 
 <details>
