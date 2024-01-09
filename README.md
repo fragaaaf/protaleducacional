@@ -8,7 +8,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
      - [ ] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
   *  - [x] Modelagem escrita (Falta aparecer o diagrama).
   *  - [ ] Detalhes sobre a configuração.
-  *  - [ ] [Código do Diagrama](#modelagemDBDiagram.io)
+  *  - [ ] [Código do Diagrama (abaixo)](#modelagemDBDiagram.io)
 
  ### 08/01/2024- nº 01/02
  - [ ] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
