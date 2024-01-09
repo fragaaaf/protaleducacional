@@ -37,4 +37,116 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 * Quantas questões tenho de cada assunto? [Obj.: gerenciar o excesso ou a falta de perguntas sobre o assunto]
 * 
 # Anexo I - Comando do DBDiagram.io
+```
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
 
+Table auth.users {
+  id integer [primary key]
+  nome varchar
+  email varchar
+  telefone varchar
+  login varchar
+  senha varchar 
+}
+
+Table resultado {
+  id integer [primary key]
+  id_estudante_fk integer [foreign key]
+  id_atividade_fk integer [foreign key]
+  nrAcessos integer
+  data timestamp
+  acertos integer
+  erros integer
+  percentual float
+  }
+
+Table disciplina {
+  id integer [primary key]
+  nome varchar
+  sigla varchar
+}
+
+Table modulo {
+  id integer [primary key]
+  id_disciplina_fk integer
+  id_curso_fk integer
+}
+
+Table atividade{
+  id integer [primary key]
+  id_disciplina_fk integer
+  sigla varchar
+  tipo varchar
+}
+
+Table assunto {
+  id integer [primary key]
+  id_disciplina_fk integer
+  objetivo varchar
+  explicacao varchar
+  exemplo varchar
+}
+
+Table curso {
+  id integer [primary key]
+  nome varchar
+  sigla varchar
+
+}
+
+Table professor_disciplina {
+  id integer [primary key]
+  id_disciplina_fk integer [foreign key]
+  id_professor_fk integer [foreign key]
+}
+
+Table alocacao {
+  id integer [primary key]
+  id_profesor_disciplina_fk integer [foreign key]
+  id_turma_modulo_fk integer [foreign key]
+}
+
+Table turma_modulo {
+  id integer [primary key]
+  id_turma_fk integer [foreign key]
+  id_modulo_fk integer [foreign key]
+  semestre integer
+}
+Table turma {
+  id integer [primary key]
+  id_curso_fk integer
+  sigla varchar
+}
+
+Table atividade_questao {
+  id integer [primary key]
+  id_atividade_fk integer [foreign key]
+  id_questao_fk integer [foreign key]
+}
+
+Table questao_assunto {
+  id integer [primary key]
+  id_assunto_fk integer [foreign key]
+  id_questao_fk integer [foreign key]
+}
+
+Table questao {
+  id integer [primary key]
+  id_alternativa_fk integer
+  enunciado varchar
+  gabarito varchar
+}
+
+Table curso {
+  id integer [primary key]
+  nome varchar
+}
+
+Ref: posts.user_id > users.id // many-to-one
+
+Ref: users.id < follows.following_user_id
+
+Ref: users.id < follows.followed_user_id
+
+```
