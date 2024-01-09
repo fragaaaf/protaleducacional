@@ -22,10 +22,10 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x] Compartilhar acesso a esse repositório com artu-hnrq.
  
  - ![Modelagem do Banco de Dados no DrawSQL](https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
-## Pendências
- - [ ] Lembrete: DrawSQL permite apenas 15 tabelas
- - [ ] Tabela Alternativa deu lugar a Tabela Alocação
- - [ ] Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)
+## ~~Pendências~~
+ - [x]  ~~Lembrete: DrawSQL permite apenas 15 tabelas~~
+ - [x] ~~Tabela Alternativa deu lugar a Tabela Alocação~~
+ - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
 
 ## Consultas requeridas
 * Quais os estudantes fizeram a atividade? [Obj.: Saber a frequência do estudante nas atividades ao longo do tempo]
