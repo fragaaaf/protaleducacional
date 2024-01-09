@@ -1,7 +1,7 @@
  <a id="topo"></a>
 # protaleducacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
- ## Mentoria de ![Arthur Henrique](https://pages.github.com/artu-hnrq) 
+ ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
  ### 08/01/2024 - nº 02/02
  - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
  ## Tarefas
