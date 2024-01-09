@@ -63,6 +63,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
 
 </details>
+
 ## Consultas requeridas
 
 <details>
