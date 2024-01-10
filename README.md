@@ -301,6 +301,6 @@ Table alternativa {
 
 # Anexo II - Documentação de consulta
 
-* [Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd){target="_blank"}
+* [Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd){:target="_blank"}
 * [Guia básico de Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open){target="_blank"}
 * [Uso do Markdown no VSCode](https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,markdown%20ou%20md%20e%20pronto!){target="_blank"}
