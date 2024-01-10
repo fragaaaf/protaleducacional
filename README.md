@@ -59,6 +59,9 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    
    - [x] Mentoria:
    </details>
+   <DETAILS>
+     <SUMMARY>SEMANA DE 01-07</SUMMARY>
+    
   <details>
   <summary>- [ ] 12 - Agendada</summary>
    
@@ -93,6 +96,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    </details>
         
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
+</DETAILS>
   <DETAILS>
  <SUMMARY>SEMANA DE 01-07</SUMMARY>
    
