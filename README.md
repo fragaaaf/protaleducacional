@@ -17,7 +17,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   - [ ] 15 - Agendada
   - [ ] 12 - Agendada
   - [ ] 11 - Agendada
-
+---
          <details>
           <summary>- [x] 09 - Supabase: criando o BD baseado na modelagem</summary>
 
