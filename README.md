@@ -7,7 +7,9 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  
   <details> 
    <summary>janeiro/2024</summary>
-   
+    <DETAILS>
+     <SUMMARY>SEMANA DE 29/01-04/02</SUMMARY>
+    
   <details>
   <summary>- [ ] 30 - agendada</summary>
    
@@ -18,6 +20,10 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    
    - [x] Mentoria:
    </details>
+   </details>
+    <DETAILS>
+     <SUMMARY>SEMANA DE 22-28</SUMMARY>
+    
   <details>
   <summary>- [ ] 26 - Agendada</summary>
    
@@ -39,6 +45,10 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    
    - [x] Mentoria:
    </details>
+   </details>
+    <DETAILS>
+     <SUMMARY>SEMANA DE 15-21</SUMMARY>
+    
   <details>
   <summary>- [ ] 19 - Agendada</summary>
    
@@ -58,6 +68,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <summary>- [ ] 15 - Agendada</summary>
    
    - [x] Mentoria:
+   </details>
    </details>
    <DETAILS>
      <SUMMARY>SEMANA DE 08-14</SUMMARY>
