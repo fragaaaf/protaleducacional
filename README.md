@@ -47,6 +47,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    </details>
    <details>
      <summary>[x] 09 - Supabase: criando o BD baseado na modelagem</summary>
+    
        - [x] Tabelas criadas: auth.users, disciplina, resultado, professor_disciplina, atividade
        - [x] relacionamentos criados: 
              - [x] auth.users.id -> resultado.id_estudante_fk
