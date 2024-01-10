@@ -17,7 +17,13 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   - [ ] 15 - Agendada
   - [ ] 12 - Agendada
   - [ ] 11 - Agendada
-  - [ ] 09 - Agendada
+
+         <details>
+  <summary>- [x] 09 - Supabase: criando o BD baseado na modelagem</summary>
+
+       
+        </details>
+        
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   - [x] 05 - Exportar as pessoas para a tabela auth.users
   - [x] 04 - Criação da Tabela Alocação para gerar histórico do curso
