@@ -2,27 +2,6 @@
 # Portal Educacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
----
-
- <details>
-  <summary>Teste de seção recolhida aninhada</summary>
-  <details>
-    <summary>01</summary>
-  
-  </details>
-  <details>
-    <summary>02</summary>
-  
-  </details>
-  <details>
-    <summary>03<summary>
-  
-  </details>
-  <details>
-    <summary>04</summary>
-  
-  </details>
- </details>
 
 ---
  
@@ -39,21 +18,40 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <summary>- [ ] 26 - Agendada</summary>
    </details>
    
-  - [ ] 25 - Agendada
-  - [ ] 23 - Agendada
-  - [ ] 22 - Agendada
-  - [ ] 19 - Agendada
-  - [ ] 18 - Agendada
-  - [ ] 16 - Agendada
-  - [ ] 15 - Agendada
-  - [ ] 12 - Agendada
-  - [ ] 11 - Agendada
-
-         
-    <details>
+  <details>
+  <summary>- [ ] 25 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 23 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 22 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 19 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 18 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 16 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 15 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 12 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 11 - Agendada</summary>
+   </details>
+   <details>
      <summary>[x] 09 - Supabase: criando o BD baseado na modelagem</summary>
-       O texto que aparecerá de descrição
-    </details>
+       - [x] Tabelas criadas: auth.users, disciplina, resultado, professor_disciplina, atividade
+       - [x] relacionamentos criados: 
+             - [x] auth.users.id -> resultado.id_estudante_fk
+             - [x] auth.users.id -> prodessor_disciplina.id_professor_fk
+   </details>
         
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
   - [x] 05 - Exportar as pessoas para a tabela auth.users
