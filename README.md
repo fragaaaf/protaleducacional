@@ -10,44 +10,69 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    
   <details>
   <summary>- [ ] 30 - agendada</summary>
+   
+   - [x] Mentoria:
   </details>
   <details>
   <summary>- [ ] 29 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 26 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
    
   <details>
   <summary>- [ ] 25 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 23 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 22 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 19 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 18 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 16 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 15 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 12 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
   <details>
   <summary>- [ ] 11 - Agendada</summary>
+   
+   - [x] Mentoria:
    </details>
    <details>
      <summary> - [ ] 10 - Supabase: Continuando o BD baseado na modelagem</summary>
-    
+
+   - [x] Mentoria: NÃO HOUVE. 
    - [ ] Tabelas criadas: 
    - [ ] relacionamentos criados: 
         - [ ] 
@@ -57,6 +82,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    <details>
      <summary> - [x] 09 - Supabase: criando o BD baseado na modelagem</summary>
     
+   - [x] Mentoria: realizada.
    - [x] Tabelas criadas: auth.users, disciplina, resultado, professor_disciplina, atividade
    - [x] relacionamentos criados: 
         - [x] auth.users.id -> resultado.id_estudante_fk
