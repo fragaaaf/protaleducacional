@@ -29,9 +29,16 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details> 
    <summary>janeiro/2024</summary>
    
-  - [ ] 30 - agendada
-  - [ ] 29 - Agendada
-  - [ ] 26 - Agendada
+  <details>
+  <summary>- [ ] 30 - agendada</summary>
+  </details>
+  <details>
+  <summary>- [ ] 29 - Agendada</summary>
+   </details>
+  <details>
+  <summary>- [ ] 26 - Agendada</summary>
+   </details>
+   
   - [ ] 25 - Agendada
   - [ ] 23 - Agendada
   - [ ] 22 - Agendada
@@ -41,7 +48,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   - [ ] 15 - Agendada
   - [ ] 12 - Agendada
   - [ ] 11 - Agendada
----
+
          
     <details>
      <summary>[x] 09 - Supabase: criando o BD baseado na modelagem</summary>
@@ -53,7 +60,9 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   - [x] 04 - Criação da Tabela Alocação para gerar histórico do curso
   - [x] 03 - Não houve mentoria
   - [x] 02 - Uso da ferramenta DrawSQL para geração da modelagem
+
 </details>
+
 <details> 
    <summary>dezembro/2023</summary>
  
