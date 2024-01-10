@@ -2,6 +2,17 @@
 # Portal Educacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
  ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
+---
+
+ <details>
+  <summary>Teste de seção recolhida aninhada</summary>
+   <details>
+    <summary>Teste de seção recolhida aninhada</summary>
+   </details>
+ </details>
+
+---
+ 
   <details> 
    <summary>janeiro/2024</summary>
    
