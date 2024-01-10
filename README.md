@@ -93,11 +93,14 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    </details>
         
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
+  <DETAILS>
+ <SUMMARY>SEMANA DE 01-07</SUMMARY>
+   
   - [x] 05 - Exportar as pessoas para a tabela auth.users
   - [x] 04 - Criação da Tabela Alocação para gerar histórico do curso
   - [x] 03 - Não houve mentoria
   - [x] 02 - Uso da ferramenta DrawSQL para geração da modelagem
-
+</DETAILS>
 </details>
 
 <details> 
