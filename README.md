@@ -6,9 +6,11 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 
  <details>
   <summary>Teste de seção recolhida aninhada</summary>
-   <details>
+  
+  <details>
     <summary>Teste de seção recolhida aninhada</summary>
-   </details>
+  
+  </details>
  </details>
 
 ---
