@@ -31,9 +31,8 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 ---
          
     <details>
-     <summary>- [x] 09 - Supabase: criando o BD baseado na modelagem</summary>
-       O texto que aparecerá de descrição.
-       
+     <summary>[x] 09 - Supabase: criando o BD baseado na modelagem</summary>
+       O texto que aparecerá de descrição
     </details>
         
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
