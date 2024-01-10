@@ -60,7 +60,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    - [x] Mentoria:
    </details>
    <DETAILS>
-     <SUMMARY>SEMANA DE 01-07</SUMMARY>
+     <SUMMARY>SEMANA DE 08-14</SUMMARY>
     
   <details>
   <summary>- [ ] 12 - Agendada</summary>
