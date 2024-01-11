@@ -88,62 +88,63 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
 <summary>SQL: montando SQL para gerar banco<summary>
  
          -- Supabase AI is experimental and may produce incorrect answers
--- Always verify the output before executing
+         -- Always verify the output before executing
+         
+         alter table turma
+         add column id_curso_fk bigint references curso;
+         
+         alter table alocacao
+         add column id_disciplina_professor_fk bigint references disciplina_professor;
+         
+         alter table alocacao
+         add column id_modulo_turma_fk bigint references modulo_turma;
+         
+         alter table assunto
+         add column id_disciplina_fk bigint references disciplina;
+         
+         alter table assunto_questao
+         add column id_assunto_fk bigint references assunto;
+         
+         alter table assunto_questao
+         add column id_questao_fk bigint references questao;
+         
+         alter table atividade
+         add column id_disciplina_fk bigint references disciplina;
+         
+         alter table atividade_questao
+         add column id_atividade_fk bigint references atividade;
+         
+         alter table atividade_questao
+         add column id_questao_fk bigint references questao;
+         
+         alter table disciplina_professor
+         add column id_disciplina_fk bigint references disciplina;
+         
+         alter table disciplina_professor
+         add column id_professor_fk bigint references auth.users;
+         
+         alter table modulo
+         add column id_disciplina_fk bigint references disciplina;
+         
+         alter table modulo
+         add column id_curso_fk bigint references curso;
+         
+         alter table modulo_turma
+         add column id_turma_fk bigint references turma;
+         
+         alter table modulo_turma
+         add column id_modulo_fk bigint references modulo;
+         
+         alter table questao
+         add column id_alternativa_fk bigint references alternativa;
+         
+         alter table resultado
+         add column id_estudante_fk bigint references auth.users;
+         
+         alter table resultado
+         add column id_atividade_fk bigint references atividade;
+</details>
 
-alter table turma
-add column id_curso_fk bigint references curso;
-
-alter table alocacao
-add column id_disciplina_professor_fk bigint references disciplina_professor;
-
-alter table alocacao
-add column id_modulo_turma_fk bigint references modulo_turma;
-
-alter table assunto
-add column id_disciplina_fk bigint references disciplina;
-
-alter table assunto_questao
-add column id_assunto_fk bigint references assunto;
-
-alter table assunto_questao
-add column id_questao_fk bigint references questao;
-
-alter table atividade
-add column id_disciplina_fk bigint references disciplina;
-
-alter table atividade_questao
-add column id_atividade_fk bigint references atividade;
-
-alter table atividade_questao
-add column id_questao_fk bigint references questao;
-
-alter table disciplina_professor
-add column id_disciplina_fk bigint references disciplina;
-
-alter table disciplina_professor
-add column id_professor_fk bigint references auth.users;
-
-alter table modulo
-add column id_disciplina_fk bigint references disciplina;
-
-alter table modulo
-add column id_curso_fk bigint references curso;
-
-alter table modulo_turma
-add column id_turma_fk bigint references turma;
-
-alter table modulo_turma
-add column id_modulo_fk bigint references modulo;
-
-alter table questao
-add column id_alternativa_fk bigint references alternativa;
-
-alter table resultado
-add column id_estudante_fk bigint references auth.users;
-
-alter table resultado
-add column id_atividade_fk bigint references atividade;
-         </details>
    - [ ] Gerar politicas: falta
         - [ ] tb_x: select, insert, update, delete 
    </details>
