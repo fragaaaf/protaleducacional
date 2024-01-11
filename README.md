@@ -76,10 +76,16 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [ ] 12 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [ ] Mentoria:
+   - [x] 11/01/2024  - Relacionar as chaves estrangeiras do estudante e do professor com o schema auth.users
+   - [x] Compartilhar projeto com Arthur.Henrique.Della.Fraga@gmail.com
+   - [ ] Baixar o POSTMAN e estudar a geração de requisições http.
+   - [ ] Gerar requisições(estudar)
+   - [ ] Gerar politicas: 
+        - [ ] tb_x: select,   insert,   update,   delete 
    </details>
   <details>
-  <summary>- [ ] 11 - Agendada</summary>
+  <summary>- [x] 11 - Agendada</summary>
    
    - [x] Mentoria: 11:30h
    - [x] SQL(concluído): Os arquivos SQL gerados pelo DBDiagram.io não são - a princípio - compatíveis com o editor SQL do SUPABASE.
@@ -90,7 +96,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    <details>
    <summary> SQL: montando SQL para gerar banco</summary>
  
-         -- Supabase AI is experimental and may produce incorrect answers  
+-- Supabase AI is experimental and may produce incorrect answers  
 -- Always verify the output before executing  
 
 --01-INDEPENDENTE  
@@ -219,9 +225,7 @@ id bigint generated always as identity primary key,
 );  
 
    </details>
-
-   - [ ] Gerar politicas: falta
-        - [ ] tb_x: select,   insert,   update,   delete 
+ 
    </details>
    <details>
      <summary> - [x] 10 - Supabase: Continuando o BD baseado na modelagem</summary>
