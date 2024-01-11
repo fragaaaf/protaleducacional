@@ -84,9 +84,10 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    - [ ] Mentoria: 11:30h
    - [ ] SQL(teste inciado): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
          
-     <details>
-     <summary> SQL: montando SQL para gerar banco<summary>
+   <details>
+   <summary> SQL: montando SQL para gerar banco<summary>
  
+         ~~~ SQL
          -- Supabase AI is experimental and may produce incorrect answers
          -- Always verify the output before executing
          
@@ -143,7 +144,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
          
          alter table resultado
          add column id_atividade_fk bigint references atividade;
-         
+         ~~~
      </details>
 
    - [ ] Gerar politicas: falta
