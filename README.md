@@ -81,29 +81,45 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [ ] 11 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria: 11:30h
+   - [x] SQL(teste): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
+   - [ ] Gerar politicas:
+        - [ ] tb_x: select, insert, update, delete 
    </details>
    <details>
-     <summary> - [ ] 10 - Supabase: Continuando o BD baseado na modelagem</summary>
+     <summary> - [x] 10 - Supabase: Continuando o BD baseado na modelagem</summary>
 
    - [x] Mentoria: NÃO HOUVE. 
-   - [ ] Tabelas criadas: 
-   - [ ] relacionamentos criados: 
-        - [ ] 
-   - [ ] politicas criadas:
-     - [ ] tb_x: select, insert, update, delete 
+   - [x] Tabelas criadas[12 de 15]: alocacao, alternativa, assunto, atividade_questao, curso, modulo, professor_disciplina, questao, questao_assunto, turma, turma_modulo, questao.
+   - [x] relacionamentos criados[13/18]:
+        
+        - [x] 01-alternativa.id -> questao.id_alternativa_fk
+        - [x] 02-assunto.id -> assunto_questao.id_assunto_fk
+        - [x] 03-atividade.id -> atividade_questao.id_atividade_fk
+        - [x] 04-curso.id -> modulo.id_curso_fk
+        - [x] 05-curso.id -> turma.id_curso_fk
+        - [x] 06-dicplina.id -> assunto.id_disciplina_fk
+        - [x] 07-dicplina.id -> modulo.id_disciplina_fk
+        - [x] 08-modulo.id -> modulo_turma.id_modulo_fk
+        - [x] 09-disciplina_professor.id -> alocacao.id_disciplina_professor_fk
+        - [x] 10-questao.id -> atividade_questao.id_questao_fk
+        - [x] 11-questao.id -> assunto_questao.id_questao_fk
+        - [x] 12-turma.id -> modulo_turma.id_turma_fk
+        - [x] 13-modulo_turma.id -> alocacao.id_modulo_turma_fk
+   - [x] Conferência de quantidade de tabelas[15] e relacionamentos[18]
+  
    </details>
    <details>
      <summary> - [x] 09 - Supabase: criando o BD baseado na modelagem</summary>
     
    - [x] Mentoria: realizada.
-   - [x] Tabelas criadas: auth.users, disciplina, resultado, professor_disciplina, atividade
-   - [x] relacionamentos criados: 
-        - [x] auth.users.id -> resultado.id_estudante_fk
-        - [x] auth.users.id -> prodessor_disciplina.id_professor_fk
-        - [x] disciplina.id -> atividade.id_disciplina_fk
-        - [x] disciplina.id -> prodessor_disciplina.id_disciplina_fk
-        - [x] atividade.id -> resultado.id_atividade_fk 
+   - [x] Tabelas criadas[3 de 15]: auth.users, disciplina, resultado, professor_disciplina, atividade
+   - [x] relacionamentos criados[05/18]: 
+        - [x] 01-auth.users.id -> resultado.id_estudante_fk
+        - [x] 02-auth.users.id -> prodessor_disciplina.id_professor_fk
+        - [x] 03-disciplina.id -> atividade.id_disciplina_fk
+        - [x] 04-disciplina.id -> disciplina_professor.id_disciplina_fk
+        - [x] 05-atividade.id -> resultado.id_atividade_fk 
    </details>
         
   - [x] 08 - Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
