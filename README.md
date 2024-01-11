@@ -81,8 +81,11 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [ ] 11 - Agendada</summary>
    
-   - [ ] Mentoria: 11:30h
-   - [ ] SQL(  teste inciado): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
+   - [x] Mentoria: 11:30h
+   - [x] SQL(concluído): Os arquivos SQL gerados pelo DBDiagram.io não são - a princípio - compatíveis com o editor SQL do SUPABASE.
+         Foi necessário fazer adaptações no código das tabelas e reordená-las para que os comandos geradores de chave estrangeira
+         funcionasse corretamente, já que - para que ocorra a relação -  é necessário que as tabelas e seus campos já existam antes
+         da relação.   
          
    <details>
    <summary> SQL: montando SQL para gerar banco</summary>
