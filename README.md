@@ -85,7 +85,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    - [ ] SQL(teste inciado): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
          
    <details>
-   <summary> SQL: montando SQL para gerar banco<summary>
+   <summary> SQL: montando SQL para gerar banco</summary>
  
          ~~~ SQL
          -- Supabase AI is experimental and may produce incorrect answers
