@@ -81,9 +81,9 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [ ] 11 - Agendada</summary>
    
-   - [x] Mentoria: 11:30h
-   - [x] SQL(teste): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
-   - [ ] Gerar politicas:
+   - [ ] Mentoria: 11:30h
+   - [ ] SQL(teste inciado): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
+   - [ ] Gerar politicas: falta
         - [ ] tb_x: select, insert, update, delete 
    </details>
    <details>
