@@ -130,14 +130,14 @@ tipo varchar,
 CONSTRAINT fk_atividade FOREIGN KEY (id_disciplina_fk) REFERENCES disciplina(id)  
 );  
 
---06-REQUISITO: ATIVIDADE E QUESTAO  
---create Table atividade_questao (  
---id bigint generated always as identity primary key,  
---id_atividade_fk bigint,  
---id_questao_fk bigint,  
---CONSTRAINT fk_atividade_questao FOREIGN KEY (id_atividade_fk) REFERENCES atividade(id),  
---CONSTRAINT fk_atividade_questao FOREIGN KEY (id_questao_fk) REFERENCES questao(id)  
---);  
+06-REQUISITO: ATIVIDADE E QUESTAO  
+create Table atividade_questao (  
+id bigint generated always as identity primary key,  
+id_atividade_fk bigint,  
+id_questao_fk bigint,  
+CONSTRAINT fk_atividade_questao FOREIGN KEY (id_atividade_fk) REFERENCES atividade(id),  
+CONSTRAINT fk_atividade_questao_2 FOREIGN KEY (id_questao_fk) REFERENCES questao(id)  
+);  
 
 --07-REQUISITO: 04-DISCIPLINA  
 create Table assunto (  
@@ -218,14 +218,6 @@ id bigint generated always as identity primary key,
  CONSTRAINT fk_alocacao_2 FOREIGN KEY (id_modulo_turma_fk) REFERENCES modulo_turma(id)  
 );  
 
-create table  
-  atividade_questao (  
-    id bigint generated always as identity primary key,  
-    id_atividade_fk bigint,  
-    id_questao_fk bigint,  
-    constraint fk_atividade_questao foreign key (id_atividade_fk) references atividade (id),  
-    constraint fk_atividade_questao_2 foreign key (id_questao_fk) references questao (id)  
-  );  
    </details>
 
    - [ ] Gerar politicas: falta
