@@ -1,7 +1,7 @@
  <a id="topo"></a>
 # Portal Educacional
 Projeto de geração e análise de avaliação para acompanhamento do desempenho dos estudantes. 
- ## Mentoria de ![Arthur Henrique](https://github.com/artu-hnrq)
+ ## Mentoria de ![Arthur Henrique](  https://github.com/artu-hnrq)
 
 ---
  
@@ -82,7 +82,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <summary>- [ ] 11 - Agendada</summary>
    
    - [ ] Mentoria: 11:30h
-   - [ ] SQL(teste inciado): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
+   - [ ] SQL(  teste inciado): não concluído geração das tabelas e seus relacionamento. Muitos erros no SQL.
          
    <details>
    <summary> SQL: montando SQL para gerar banco</summary>
@@ -90,92 +90,92 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
          ~~~ SQL
          -- Supabase AI is experimental and may produce incorrect answers
 -- Always verify the output before executing
-create Table alocacao (
+create Table alocacao (  
  id bigint generated always as identity primary key  
   -- id_disciplina_professor_fk integer [ref:>  disciplina_professor.id]
   -- id_modulo_turma_fk integer [ref:>  modulo_turma.id]
-);
+);  
 
-create Table alternativa (
+create Table alternativa (  
  id bigint generated always as identity primary key,    
   alternativa varchar
-);
+);  
 
-create Table assunto (
+create Table assunto (  
  id bigint generated always as identity primary key,    
   -- id_disciplina_fk integer [ref:>  disciplina.id]
   objetivo varchar,  
   explicacao varchar,  
   exemplo varchar
-);
+);  
 
-create Table assunto_questao (
+create Table assunto_questao (  
  id bigint generated always as identity primary key  
   -- id_assunto_fk integer [ref:> assunto.id]
   -- id_questao_fk integer [ref:> questao.id]
-);
+);  
 
-create Table atividade(
+create Table atividade(  
  id bigint generated always as identity primary key,    
   -- id_disciplina_fk integer [ref:> disciplina.id]
   sigla varchar,  
   tipo varchar
-);
+);  
 
-create Table atividade_questao (
+create Table atividade_questao (  
  id bigint generated always as identity primary key  
   -- id_atividade_fk integer [ref:> atividade.id]
   -- id_questao_fk integer [ref:> questao.id]
-);
+);  
 
-create Table auth.users (
+create Table auth.users (  
  id bigint generated always as identity primary key,    
   nome varchar,  
   email varchar,  
   telefone varchar,  
   login varchar,  
   senha varchar
-);
+);  
 
-create Table curso (
+create Table curso (  
  id bigint generated always as identity primary key,    
   nome varchar,  
   sigla varchar
-);
+);  
 
-create Table disciplina (
+create Table disciplina (  
  id bigint generated always as identity primary key,    
   nome varchar,  
   sigla varchar
-);
+);  
 
-create Table disciplina_professor (
+create Table disciplina_professor (  
  id bigint generated always as identity primary key  
   -- id_disciplina_fk integer [ref:> disciplina.id]
   -- id_professor_fk integer [ref:>  auth.users.id]
-);
+);  
 
-create Table modulo (
+create Table modulo (  
  id bigint generated always as identity primary key  
   -- id_disciplina_fk integer [ref:>  disciplina.id]
   -- id_curso_fk integer [ref:> curso.id]
-);
+);  
 
-create Table modulo_turma (
+create Table modulo_turma (  
  id bigint generated always as identity primary key,    
   -- id_turma_fk integer [ref:> turma.id]
   -- id_modulo_fk integer [ref:> modulo.id]
   semestre integer
-);
+);  
 
-create Table questao (
+create Table questao (  
  id bigint generated always as identity primary key,    
   -- id_alternativa_fk integer [ref:> alternativa.id]
   enunciado varchar,  
   gabarito varchar
-);
+);  
 
-create Table resultado (
+create Table resultado (  
  id bigint generated always as identity primary key,    
   -- id_estudante_fk integer [ref:> auth.users.id]
   -- id_atividade_fk integer [ref:> atividade.id]
@@ -184,13 +184,13 @@ create Table resultado (
   acertos integer,  
   erros integer,  
   percentual float
-  );
+  );  
 
-create Table turma (
+create Table turma (  
  id bigint generated always as identity primary key,    
   -- id_curso_fk integer [ref:> curso.id]
   sigla varchar
-);
+);  
 
 alter Table turma
 add column  id_curso_fk bigint references curso;
@@ -302,7 +302,7 @@ add column  id_atividade_fk bigint references atividade;
 <details> 
    <summary>dezembro/2023</summary>
  
-   - [x] 29 - Modelagem física(rascunho) do BD da aplicação
+   - [x] 29 - Modelagem física(  rascunho) do BD da aplicação
 </details>
 
  ## Tarefas
@@ -311,31 +311,31 @@ add column  id_atividade_fk bigint references atividade;
 <summary>08/01/2024 - nº 02/02</summary>
 
  - [x] Migrar modelagem da ferramenta DrawSQL para dbdiagram.io
-  *  - [x] Consultar ![documentação do DbDiagram.io](https://dbml.dbdiagram.io/docs/#index-settings)
-     - [x] ![Vídeo sobre DBDiagram.io] (https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
-  *  - [x] ![Modelagem DBDiagram.io concluida](https://dbdiagram.io/d/portal_educ-659c5f01ac844320ae7c62ae)
+  *  - [x] Consultar ![documentação do DbDiagram.io](  https://dbml.dbdiagram.io/docs/#index-settings)
+     - [x] ![Vídeo sobre DBDiagram.io] (  https://youtu.be/l_yTCfhFxdQ?si=Dp7_1063_-Auf_61)
+  *  - [x] ![Modelagem DBDiagram.io concluida](  https://dbdiagram.io/d/portal_educ-659c5f01ac844320ae7c62ae)
   *  - [x] Erros ou falhas corrigidas.
-  *  - [x] [Código do Diagrama (abaixo)](#modelagemDBDiagram.io)
-  *  - [x] [Documentação de Consulta](#doc) 
+  *  - [x] [Código do Diagrama (  abaixo)](  #modelagemDBDiagram.io)
+  *  - [x] [Documentação de Consulta](  #doc) 
 </details>
 
 <details>
 <summary>08/01/2024- nº 01/02</summary>
 
- - [x] Retirar as tabelas pessoas da modelagem (Fazendo as foreing key  s que as apontavam apontarem para auth.users).
+ - [x] Retirar as tabelas pessoas da modelagem (  Fazendo as foreing key  s que as apontavam apontarem para auth.users).
   *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acesso as tabelas do banco de dados]
   *  - [x] Apagadas as Tabelas **Estudante** e **Professor** por não serem mais necessárias.
-  *  - [x] ~~Feitas as relações (um para muitos) das Tabelas Estudantes e Professor para a Tabela auth.users~~
+  *  - [x] ~~Feitas as relações (  um para muitos) das Tabelas Estudantes e Professor para a Tabela auth.users~~
   *  - [X] Criadas as relações **auth.users.id -> Resultado.id_estudante_fk** e **auth.users.id-> Professor_disciplina.id_professor_fk**
   *  - [X] Recriadas as **Tabelas Alternativa** e **Tabela Curso**. 
  - [x] Sintetizar brevemente aprendizados em markdown num repositorio no github.
  - [x] Compartilhar acesso a esse repositório com artu-hnrq.
  
- - ![Modelagem do Banco de Dados no DrawSQL](https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
+ - ![Modelagem do Banco de Dados no DrawSQL](  https://drawsql.app/teams/dev-tst/diagrams/p-educ/embed)
 ## ~~Pendências~~
  - [x]  ~~Lembrete: DrawSQL permite apenas 15 tabelas~~
  - [x] ~~Tabela Alternativa deu lugar a Tabela Alocação~~
- - [x] ~~Tabela Curso deu lugar a Tabela auth.users(Tabela Pessoa)~~
+ - [x] ~~Tabela Curso deu lugar a Tabela auth.users(  Tabela Pessoa)~~
 
 </details>
 
@@ -347,16 +347,16 @@ add column  id_atividade_fk bigint references atividade;
 * Quais os **estudantes** fizeram a atividade? [Obj.: Saber a frequência do estudante nas atividades ao longo do tempo]
 * Quais **estudantes** NÃO fizeram a atividade? [Obj.: ter lista de quais estão com pendências nas atividades]
 * Quais **estudantes**  - QUE FIZERAM - não obteram nota acima de 6? [Obj.: quem apresenta dificuldade - estatística]
-* Quais **estudantes** (RE)FIZERAM as novas atividades sugeridas pelo portal? [Obj.: quem foi persistente?]
+* Quais **estudantes** (  RE)FIZERAM as novas atividades sugeridas pelo portal? [Obj.: quem foi persistente?]
 * Quais **estudantes** tiraram 10. [Obj.: destacar o empenho].
-* Relação decrescente das **questões(assuntos)** mais erradas [Obj.: saber onde a turma mais errou].
+* Relação decrescente das **questões(  assuntos)** mais erradas [Obj.: saber onde a turma mais errou].
 * Relação crescente dos **estudantes** com maior nota na atividade [Obj.: criar classificação por atividade]
 * Relação crescente dos **estudantes** com maiores médias. [Obj.: criar classificação geral]
 * Relação dos **estudantes** que mais acessaram ao portal [Obj.: criar classificação]
 * Quantas **questões** tenho de cada assunto? [Obj.: gerenciar o excesso ou a falta de perguntas sobre o assunto]
 * Quais são os **professores** estão na turma?
 * Quais as **disciplinas** da turma?
-* Quais **professores ministram(ou ministraram) as disciplinas** na turma?
+* Quais **professores ministram(  ou ministraram) as disciplinas** na turma?
 * Quais as **notas do estudante** no módulo?
 * Qual a **média final** do estudante no módulo?
 * 
@@ -364,7 +364,7 @@ add column  id_atividade_fk bigint references atividade;
 
   <a id="modelagemDBDiagram.io"></a>
 # Anexo I - Comando do DBDiagram.io
-[Topo](#topo)
+[Topo](  #topo)
 
 <details>
 <summary>Código da Modelagem</summary>
@@ -476,12 +476,12 @@ Table alternativa {
 ```
 </details>
 
-[Topo](#topo)
+[Topo](  #topo)
 
  <a id="doc"></a>
 
 # Anexo II - Documentação de consulta
 
-* [Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
-* [Guia básico de Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
-* [Uso do Markdown no VSCode](https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,  markdown%20ou%20md%20e%20pronto!)
+* [Criando um arquivo Markdown com links internos](  https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
+* [Guia básico de Markdown](  https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
+* [Uso do Markdown no VSCode](  https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,  markdown%20ou%20md%20e%20pronto!)
