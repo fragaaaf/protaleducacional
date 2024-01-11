@@ -91,103 +91,103 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
          -- Supabase AI is experimental and may produce incorrect answers
 -- Always verify the output before executing
 create Table alocacao (
- id bigint generated always as identity primary key
+ id bigint generated always as identity primary key  
   -- id_disciplina_professor_fk integer [ref:>  disciplina_professor.id]
   -- id_modulo_turma_fk integer [ref:>  modulo_turma.id]
 );
 
 create Table alternativa (
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   alternativa varchar
 );
 
 create Table assunto (
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   -- id_disciplina_fk integer [ref:>  disciplina.id]
-  objetivo varchar,
-  explicacao varchar,
+  objetivo varchar,  
+  explicacao varchar,  
   exemplo varchar
 );
 
 create Table assunto_questao (
- id bigint generated always as identity primary key
+ id bigint generated always as identity primary key  
   -- id_assunto_fk integer [ref:> assunto.id]
   -- id_questao_fk integer [ref:> questao.id]
 );
 
 create Table atividade(
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   -- id_disciplina_fk integer [ref:> disciplina.id]
-  sigla varchar,
+  sigla varchar,  
   tipo varchar
 );
 
 create Table atividade_questao (
- id bigint generated always as identity primary key
+ id bigint generated always as identity primary key  
   -- id_atividade_fk integer [ref:> atividade.id]
   -- id_questao_fk integer [ref:> questao.id]
 );
 
 create Table auth.users (
- id bigint generated always as identity primary key,
-  nome varchar,
-  email varchar,
-  telefone varchar,
-  login varchar,
+ id bigint generated always as identity primary key,    
+  nome varchar,  
+  email varchar,  
+  telefone varchar,  
+  login varchar,  
   senha varchar
 );
 
 create Table curso (
- id bigint generated always as identity primary key,
-  nome varchar,
+ id bigint generated always as identity primary key,    
+  nome varchar,  
   sigla varchar
 );
 
 create Table disciplina (
- id bigint generated always as identity primary key,
-  nome varchar,
+ id bigint generated always as identity primary key,    
+  nome varchar,  
   sigla varchar
 );
 
 create Table disciplina_professor (
- id bigint generated always as identity primary key
+ id bigint generated always as identity primary key  
   -- id_disciplina_fk integer [ref:> disciplina.id]
   -- id_professor_fk integer [ref:>  auth.users.id]
 );
 
 create Table modulo (
- id bigint generated always as identity primary key
+ id bigint generated always as identity primary key  
   -- id_disciplina_fk integer [ref:>  disciplina.id]
   -- id_curso_fk integer [ref:> curso.id]
 );
 
 create Table modulo_turma (
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   -- id_turma_fk integer [ref:> turma.id]
   -- id_modulo_fk integer [ref:> modulo.id]
   semestre integer
 );
 
 create Table questao (
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   -- id_alternativa_fk integer [ref:> alternativa.id]
-  enunciado varchar,
+  enunciado varchar,  
   gabarito varchar
 );
 
 create Table resultado (
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   -- id_estudante_fk integer [ref:> auth.users.id]
   -- id_atividade_fk integer [ref:> atividade.id]
-  nrAcessos integer,
-  data timestamp,
-  acertos integer,
-  erros integer,
+  nrAcessos integer,  
+  data timestamp,  
+  acertos integer,  
+  erros integer,  
   percentual float
   );
 
 create Table turma (
- id bigint generated always as identity primary key,
+ id bigint generated always as identity primary key,    
   -- id_curso_fk integer [ref:> curso.id]
   sigla varchar
 );
@@ -249,13 +249,13 @@ add column  id_atividade_fk bigint references atividade;
    </details>
 
    - [ ] Gerar politicas: falta
-        - [ ] tb_x: select, insert, update, delete 
+        - [ ] tb_x: select,   insert,   update,   delete 
    </details>
    <details>
      <summary> - [x] 10 - Supabase: Continuando o BD baseado na modelagem</summary>
 
    - [x] Mentoria: NÃO HOUVE. 
-   - [x] Tabelas criadas[12 de 15]: alocacao, alternativa, assunto, atividade_questao, curso, modulo, professor_disciplina, questao, questao_assunto, turma, turma_modulo, questao.
+   - [x] Tabelas criadas[12 de 15]: alocacao,   alternativa,   assunto,   atividade_questao,   curso,   modulo,   professor_disciplina,   questao,   questao_assunto,   turma,   turma_modulo,   questao.
    - [x] relacionamentos criados[13/18]:
         
         - [x] 01-alternativa.id -> questao.id_alternativa_fk
@@ -278,7 +278,7 @@ add column  id_atividade_fk bigint references atividade;
      <summary> - [x] 09 - Supabase: criando o BD baseado na modelagem</summary>
     
    - [x] Mentoria: realizada.
-   - [x] Tabelas criadas[3 de 15]: auth.users, disciplina, resultado, professor_disciplina, atividade
+   - [x] Tabelas criadas[3 de 15]: auth.users,   disciplina,   resultado,   professor_disciplina,   atividade
    - [x] relacionamentos criados[05/18]: 
         - [x] 01-auth.users.id -> resultado.id_estudante_fk
         - [x] 02-auth.users.id -> prodessor_disciplina.id_professor_fk
@@ -322,7 +322,7 @@ add column  id_atividade_fk bigint references atividade;
 <details>
 <summary>08/01/2024- nº 01/02</summary>
 
- - [x] Retirar as tabelas pessoas da modelagem (Fazendo as foreing keys que as apontavam apontarem para auth.users).
+ - [x] Retirar as tabelas pessoas da modelagem (Fazendo as foreing key  s que as apontavam apontarem para auth.users).
   *  - [x] Criada a Tabela auth.users[Obj.: Permissões de acesso as tabelas do banco de dados]
   *  - [x] Apagadas as Tabelas **Estudante** e **Professor** por não serem mais necessárias.
   *  - [x] ~~Feitas as relações (um para muitos) das Tabelas Estudantes e Professor para a Tabela auth.users~~
@@ -374,7 +374,7 @@ add column  id_atividade_fk bigint references atividade;
 // Docs: https://dbml.dbdiagram.io/docs
 
 Table auth.users {
-  id integer [primary key]
+  id integer [primary key  ]
   nome varchar
   email varchar
   telefone varchar
@@ -383,7 +383,7 @@ Table auth.users {
 }
 
 Table resultado {
-  id integer [primary key]
+  id integer [primary key  ]
   id_estudante_fk integer [ref:> auth.users.id]
   id_atividade_fk integer [ref:> atividade.id]
   nrAcessos integer
@@ -394,26 +394,26 @@ Table resultado {
   }
 
 Table disciplina {
-  id integer [primary key]
+  id integer [primary key  ]
   nome varchar
   sigla varchar
 }
 
 Table modulo {
-  id integer [primary key]
+  id integer [primary key  ]
   id_disciplina_fk integer [ref:>  disciplina.id]
   id_curso_fk integer [ref:> curso.id]
 }
 
 Table atividade{
-  id integer [primary key]
+  id integer [primary key  ]
   id_disciplina_fk integer [ref:> disciplina.id]
   sigla varchar
   tipo varchar
 }
 
 Table assunto {
-  id integer [primary key]
+  id integer [primary key  ]
   id_disciplina_fk integer [ref:>  disciplina.id]
   objetivo varchar
   explicacao varchar
@@ -421,56 +421,56 @@ Table assunto {
 }
 
 Table curso {
-  id integer [primary key]
+  id integer [primary key  ]
   nome varchar
   sigla varchar
 }
 
 Table professor_disciplina {
-  id integer [primary key]
+  id integer [primary key  ]
   id_disciplina_fk integer [ref:> disciplina.id]
   id_professor_fk integer [ref:>  auth.users.id]
 }
 
 Table alocacao {
-  id integer [primary key]
+  id integer [primary key  ]
   id_profesor_disciplina_fk integer [ref:>  professor_disciplina.id]
   id_turma_modulo_fk integer [ref:>  turma_modulo.id]
 }
 
 Table turma_modulo {
-  id integer [primary key]
+  id integer [primary key  ]
   id_turma_fk integer [ref:> turma.id]
   id_modulo_fk integer [ref:> modulo.id]
   semestre integer
 }
 Table turma {
-  id integer [primary key]
+  id integer [primary key  ]
   id_curso_fk integer [ref:> curso.id]
   sigla varchar
 }
 
 Table atividade_questao {
-  id integer [primary key]
+  id integer [primary key  ]
   id_atividade_fk integer [ref:> atividade.id]
   id_questao_fk integer [ref:> questao.id]
 }
 
 Table questao_assunto {
-  id integer [primary key]
+  id integer [primary key  ]
   id_assunto_fk integer [ref:> assunto.id]
   id_questao_fk integer [ref:> questao.id]
 }
 
 Table questao {
-  id integer [primary key]
+  id integer [primary key  ]
   id_alternativa_fk integer [ref:> alternativa.id]
   enunciado varchar
   gabarito varchar
 }
 
 Table alternativa {
-  id integer [primary key]
+  id integer [primary key  ]
   alternativa varchar
 }
 ```
@@ -484,4 +484,4 @@ Table alternativa {
 
 * [Criando um arquivo Markdown com links internos](https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
 * [Guia básico de Markdown](https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
-* [Uso do Markdown no VSCode](https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,markdown%20ou%20md%20e%20pronto!)
+* [Uso do Markdown no VSCode](https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,  markdown%20ou%20md%20e%20pronto!)
