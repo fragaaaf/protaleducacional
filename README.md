@@ -87,165 +87,142 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    <details>
    <summary> SQL: montando SQL para gerar banco</summary>
  
-         ~~~ SQL
-         -- Supabase AI is experimental and may produce incorrect answers
--- Always verify the output before executing
-create Table alocacao (  
- id bigint generated always as identity primary key  
-  -- id_disciplina_professor_fk integer [ref:>  disciplina_professor.id]
-  -- id_modulo_turma_fk integer [ref:>  modulo_turma.id]
-);  
+         -- Supabase AI is experimental and may produce incorrect answers  
+-- Always verify the output before executing  
 
+--01-INDEPENDENTE  
 create Table alternativa (  
- id bigint generated always as identity primary key,    
-  alternativa varchar
-);  
+id bigint generated always as identity primary key,  
+alternativa varchar );  
 
-create Table assunto (  
- id bigint generated always as identity primary key,    
-  -- id_disciplina_fk integer [ref:>  disciplina.id]
-  objetivo varchar,  
-  explicacao varchar,  
-  exemplo varchar
-);  
-
-create Table assunto_questao (  
- id bigint generated always as identity primary key  
-  -- id_assunto_fk integer [ref:> assunto.id]
-  -- id_questao_fk integer [ref:> questao.id]
-);  
-
-create Table atividade(  
- id bigint generated always as identity primary key,    
-  -- id_disciplina_fk integer [ref:> disciplina.id]
-  sigla varchar,  
-  tipo varchar
-);  
-
-create Table atividade_questao (  
- id bigint generated always as identity primary key  
-  -- id_atividade_fk integer [ref:> atividade.id]
-  -- id_questao_fk integer [ref:> questao.id]
-);  
-
-create Table auth.users (  
- id bigint generated always as identity primary key,    
-  nome varchar,  
-  email varchar,  
-  telefone varchar,  
-  login varchar,  
-  senha varchar
-);  
-
-create Table curso (  
- id bigint generated always as identity primary key,    
-  nome varchar,  
-  sigla varchar
-);  
-
-create Table disciplina (  
- id bigint generated always as identity primary key,    
-  nome varchar,  
-  sigla varchar
-);  
-
-create Table disciplina_professor (  
- id bigint generated always as identity primary key  
-  -- id_disciplina_fk integer [ref:> disciplina.id]
-  -- id_professor_fk integer [ref:>  auth.users.id]
-);  
-
-create Table modulo (  
- id bigint generated always as identity primary key  
-  -- id_disciplina_fk integer [ref:>  disciplina.id]
-  -- id_curso_fk integer [ref:> curso.id]
-);  
-
-create Table modulo_turma (  
- id bigint generated always as identity primary key,    
-  -- id_turma_fk integer [ref:> turma.id]
-  -- id_modulo_fk integer [ref:> modulo.id]
-  semestre integer
-);  
-
+--02-requisito: 01-ALTERNATIVA  
 create Table questao (  
- id bigint generated always as identity primary key,    
-  -- id_alternativa_fk integer [ref:> alternativa.id]
-  enunciado varchar,  
-  gabarito varchar
+id bigint generated always as identity primary key,  
+id_alternativa_fk bigint,   
+enunciado varchar,  
+gabarito varchar,  
+CONSTRAINT fk_questao FOREIGN KEY (id_alternativa_fk) REFERENCES alternativa(id)  
+ );  
+
+--03-INDEPENDENTE  
+create Table curso (  
+id bigint generated always as identity primary key,  
+nome varchar,  
+sigla varchar  
 );  
 
-create Table resultado (  
- id bigint generated always as identity primary key,    
-  -- id_estudante_fk integer [ref:> auth.users.id]
-  -- id_atividade_fk integer [ref:> atividade.id]
-  nrAcessos integer,  
-  data timestamp,  
-  acertos integer,  
-  erros integer,  
-  percentual float
-  );  
+--04-INDEPENDENTE  
+create Table disciplina (  
+id bigint generated always as identity primary key,  
+nome varchar,  
+sigla varchar  
+);  
 
+--05-REQUISITO: 04-DISCIPLINA  
+create Table atividade(  
+id bigint generated always as identity primary key,  
+id_disciplina_fk bigint,  
+sigla varchar,  
+tipo varchar,  
+CONSTRAINT fk_atividade FOREIGN KEY (id_disciplina_fk) REFERENCES disciplina(id)  
+);  
+
+--06-REQUISITO: ATIVIDADE E QUESTAO  
+--create Table atividade_questao (  
+--id bigint generated always as identity primary key,  
+--id_atividade_fk bigint,  
+--id_questao_fk bigint,  
+--CONSTRAINT fk_atividade_questao FOREIGN KEY (id_atividade_fk) REFERENCES atividade(id),  
+--CONSTRAINT fk_atividade_questao FOREIGN KEY (id_questao_fk) REFERENCES questao(id)  
+--);  
+
+--07-REQUISITO: 04-DISCIPLINA  
+create Table assunto (  
+id bigint generated always as identity primary key,  
+id_disciplina_fk bigint,  
+objetivo varchar,  
+explicacao varchar,  
+exemplo varchar,  
+CONSTRAINT fk_assunto FOREIGN KEY (id_disciplina_fk) REFERENCES disciplina(id)  
+);  
+
+--08-REQUISITO: 07-ASSUNTO E 02-QUESTAO  
+create Table assunto_questao (  
+id bigint generated always as identity primary key,  
+id_assunto_fk bigint,    
+id_questao_fk bigint,  
+CONSTRAINT fk_assunto_questao FOREIGN KEY (id_assunto_fk) REFERENCES assunto(id),  
+CONSTRAINT fk_assunto_questao_2 FOREIGN KEY (id_questao_fk) REFERENCES questao(id)  
+);  
+
+--09-REQUISITO: 04-DISCIPLINA E AUTH.USERS  
+create Table disciplina_professor (  
+id bigint generated always as identity primary key,  
+id_disciplina_fk bigint,  
+id_professor_fk uuid,  
+CONSTRAINT fk_disciplina_professor FOREIGN KEY (id_disciplina_fk) REFERENCES disciplina(id),  
+CONSTRAINT fk_disciplina_professor_2 FOREIGN KEY (id_professor_fk) REFERENCES auth.users(id)  
+);  
+
+--10-REQUISITO: 03-CURSO E 04-DISCIPLINA  
+create Table modulo (  
+id bigint generated always as identity primary key,  
+id_disciplina_fk bigint,   
+id_curso_fk bigint,  
+CONSTRAINT fk_modulo FOREIGN KEY (id_disciplina_fk) REFERENCES disciplina(id),  
+CONSTRAINT fk_modulo_2 FOREIGN KEY (id_curso_fk) REFERENCES curso(id)  
+);  
+
+--11-REQUISITO: 03-CURSO  
 create Table turma (  
- id bigint generated always as identity primary key,    
-  -- id_curso_fk integer [ref:> curso.id]
-  sigla varchar
+id bigint generated always as identity primary key,  
+id_curso_fk bigint,  
+sigla varchar,  
+CONSTRAINT fk_turma FOREIGN KEY (id_curso_fk) REFERENCES curso(id)  
 );  
 
-alter Table turma
-add column  id_curso_fk bigint references curso;
+--12-REQUISITO: 11-TURMA E 10-MODULO  
+create Table modulo_turma (  
+id bigint generated always as identity primary key,  
+id_turma_fk bigint,   
+id_modulo_fk bigint,  
+CONSTRAINT fk_modulo_turma FOREIGN KEY (id_turma_fk) REFERENCES turma(id),  
+CONSTRAINT fk_modulo_turma_2 FOREIGN KEY (id_modulo_fk) REFERENCES modulo(id)  
+);  
 
-alter Table alocacao
-add column  id_disciplina_professor_fk bigint references disciplina_professor;
+--13-REQUISITOS: AUTH.USERS E 05-ATIVIDADE  
+create Table resultado (  
+id bigint generated always as identity primary key,  
+id_estudante_fk uuid,  
+id_atividade_fk bigint,  
+nrAcessos bigint,  
+data timestamp,  
+acertos bigint,  
+erros bigint,  
+percentual float,  
+CONSTRAINT fk_resultado  
+  FOREIGN KEY (id_estudante_fk) REFERENCES auth.users(id),  
+--CONSTRAINT fk_resultado FOREIGN KEY (id_estudante_fk) REFERENCES auth.users(id),  
+CONSTRAINT fk_resultado_2 FOREIGN KEY (id_atividade_fk) REFERENCES atividade(id)  
+);  
 
-alter Table alocacao
-add column  id_modulo_turma_fk bigint references modulo_turma;
+--14-REQUISITO: 09-DISCIPLINA_PROFESSOR E 12-MODULO_TURMA  
+create Table alocacao (  
+id bigint generated always as identity primary key,  
+ id_disciplina_professor_fk bigint,   
+ id_modulo_turma_fk bigint,   
+ CONSTRAINT fk_alocacao FOREIGN KEY (id_disciplina_professor_fk) REFERENCES disciplina_professor(id),  
+ CONSTRAINT fk_alocacao_2 FOREIGN KEY (id_modulo_turma_fk) REFERENCES modulo_turma(id)  
+);  
 
-alter Table assunto
-add column  id_disciplina_fk bigint references disciplina;
-
-alter Table assunto_questao
-add column  id_assunto_fk bigint references assunto;
-
-alter Table assunto_questao
-add column  id_questao_fk bigint references questao;
-
-alter Table atividade
-add column  id_disciplina_fk bigint references disciplina;
-
-alter Table atividade_questao
-add column  id_atividade_fk bigint references atividade;
-
-alter Table atividade_questao
-add column  id_questao_fk bigint references questao;
-
-alter Table disciplina_professor
-add column  id_disciplina_fk bigint references disciplina;
-
-alter Table disciplina_professor
-add column  id_professor_fk bigint references auth.users;
-
-alter Table modulo
-add column  id_disciplina_fk bigint references disciplina;
-
-alter Table modulo
-add column  id_curso_fk bigint references curso;
-
-alter Table modulo_turma
-add column  id_turma_fk bigint references turma;
-
-alter Table modulo_turma
-add column  id_modulo_fk bigint references modulo;
-
-alter Table questao
-add column  id_alternativa_fk bigint references alternativa;
-
-alter Table resultado
-add column  id_estudante_fk bigint references auth.users;
-
-alter Table resultado
-add column  id_atividade_fk bigint references atividade;
-         ~~~
+create table  
+  atividade_questao (  
+    id bigint generated always as identity primary key,  
+    id_atividade_fk bigint,  
+    id_questao_fk bigint,  
+    constraint fk_atividade_questao foreign key (id_atividade_fk) references atividade (id),  
+    constraint fk_atividade_questao_2 foreign key (id_questao_fk) references questao (id)  
+  );  
    </details>
 
    - [ ] Gerar politicas: falta
