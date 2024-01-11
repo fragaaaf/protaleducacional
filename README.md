@@ -53,12 +53,12 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <summary>- [ ] 19 - Agendada</summary>
    
    - [x] Mentoria:
-   </details>
+  </details>
   <details>
   <summary>- [ ] 18 - Agendada</summary>
    
    - [x] Mentoria:
-   </details>
+  </details>
   <details>
   <summary>- [ ] 16 - Agendada</summary>
    
@@ -145,7 +145,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
          alter table resultado
          add column id_atividade_fk bigint references atividade;
          ~~~
-     </details>
+   </details>
 
    - [ ] Gerar politicas: falta
         - [ ] tb_x: select, insert, update, delete 
