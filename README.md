@@ -89,61 +89,162 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
  
          ~~~ SQL
          -- Supabase AI is experimental and may produce incorrect answers
-         -- Always verify the output before executing
-         
-         alter table turma
-         add column id_curso_fk bigint references curso;
-         
-         alter table alocacao
-         add column id_disciplina_professor_fk bigint references disciplina_professor;
-         
-         alter table alocacao
-         add column id_modulo_turma_fk bigint references modulo_turma;
-         
-         alter table assunto
-         add column id_disciplina_fk bigint references disciplina;
-         
-         alter table assunto_questao
-         add column id_assunto_fk bigint references assunto;
-         
-         alter table assunto_questao
-         add column id_questao_fk bigint references questao;
-         
-         alter table atividade
-         add column id_disciplina_fk bigint references disciplina;
-         
-         alter table atividade_questao
-         add column id_atividade_fk bigint references atividade;
-         
-         alter table atividade_questao
-         add column id_questao_fk bigint references questao;
-         
-         alter table disciplina_professor
-         add column id_disciplina_fk bigint references disciplina;
-         
-         alter table disciplina_professor
-         add column id_professor_fk bigint references auth.users;
-         
-         alter table modulo
-         add column id_disciplina_fk bigint references disciplina;
-         
-         alter table modulo
-         add column id_curso_fk bigint references curso;
-         
-         alter table modulo_turma
-         add column id_turma_fk bigint references turma;
-         
-         alter table modulo_turma
-         add column id_modulo_fk bigint references modulo;
-         
-         alter table questao
-         add column id_alternativa_fk bigint references alternativa;
-         
-         alter table resultado
-         add column id_estudante_fk bigint references auth.users;
-         
-         alter table resultado
-         add column id_atividade_fk bigint references atividade;
+-- Always verify the output before executing
+create Table alocacao (
+ id bigint generated always as identity primary key
+  -- id_disciplina_professor_fk integer [ref:>  disciplina_professor.id]
+  -- id_modulo_turma_fk integer [ref:>  modulo_turma.id]
+);
+
+create Table alternativa (
+ id bigint generated always as identity primary key,
+  alternativa varchar
+);
+
+create Table assunto (
+ id bigint generated always as identity primary key,
+  -- id_disciplina_fk integer [ref:>  disciplina.id]
+  objetivo varchar,
+  explicacao varchar,
+  exemplo varchar
+);
+
+create Table assunto_questao (
+ id bigint generated always as identity primary key
+  -- id_assunto_fk integer [ref:> assunto.id]
+  -- id_questao_fk integer [ref:> questao.id]
+);
+
+create Table atividade(
+ id bigint generated always as identity primary key,
+  -- id_disciplina_fk integer [ref:> disciplina.id]
+  sigla varchar,
+  tipo varchar
+);
+
+create Table atividade_questao (
+ id bigint generated always as identity primary key
+  -- id_atividade_fk integer [ref:> atividade.id]
+  -- id_questao_fk integer [ref:> questao.id]
+);
+
+create Table auth.users (
+ id bigint generated always as identity primary key,
+  nome varchar,
+  email varchar,
+  telefone varchar,
+  login varchar,
+  senha varchar
+);
+
+create Table curso (
+ id bigint generated always as identity primary key,
+  nome varchar,
+  sigla varchar
+);
+
+create Table disciplina (
+ id bigint generated always as identity primary key,
+  nome varchar,
+  sigla varchar
+);
+
+create Table disciplina_professor (
+ id bigint generated always as identity primary key
+  -- id_disciplina_fk integer [ref:> disciplina.id]
+  -- id_professor_fk integer [ref:>  auth.users.id]
+);
+
+create Table modulo (
+ id bigint generated always as identity primary key
+  -- id_disciplina_fk integer [ref:>  disciplina.id]
+  -- id_curso_fk integer [ref:> curso.id]
+);
+
+create Table modulo_turma (
+ id bigint generated always as identity primary key,
+  -- id_turma_fk integer [ref:> turma.id]
+  -- id_modulo_fk integer [ref:> modulo.id]
+  semestre integer
+);
+
+create Table questao (
+ id bigint generated always as identity primary key,
+  -- id_alternativa_fk integer [ref:> alternativa.id]
+  enunciado varchar,
+  gabarito varchar
+);
+
+create Table resultado (
+ id bigint generated always as identity primary key,
+  -- id_estudante_fk integer [ref:> auth.users.id]
+  -- id_atividade_fk integer [ref:> atividade.id]
+  nrAcessos integer,
+  data timestamp,
+  acertos integer,
+  erros integer,
+  percentual float
+  );
+
+create Table turma (
+ id bigint generated always as identity primary key,
+  -- id_curso_fk integer [ref:> curso.id]
+  sigla varchar
+);
+
+alter Table turma
+add column  id_curso_fk bigint references curso;
+
+alter Table alocacao
+add column  id_disciplina_professor_fk bigint references disciplina_professor;
+
+alter Table alocacao
+add column  id_modulo_turma_fk bigint references modulo_turma;
+
+alter Table assunto
+add column  id_disciplina_fk bigint references disciplina;
+
+alter Table assunto_questao
+add column  id_assunto_fk bigint references assunto;
+
+alter Table assunto_questao
+add column  id_questao_fk bigint references questao;
+
+alter Table atividade
+add column  id_disciplina_fk bigint references disciplina;
+
+alter Table atividade_questao
+add column  id_atividade_fk bigint references atividade;
+
+alter Table atividade_questao
+add column  id_questao_fk bigint references questao;
+
+alter Table disciplina_professor
+add column  id_disciplina_fk bigint references disciplina;
+
+alter Table disciplina_professor
+add column  id_professor_fk bigint references auth.users;
+
+alter Table modulo
+add column  id_disciplina_fk bigint references disciplina;
+
+alter Table modulo
+add column  id_curso_fk bigint references curso;
+
+alter Table modulo_turma
+add column  id_turma_fk bigint references turma;
+
+alter Table modulo_turma
+add column  id_modulo_fk bigint references modulo;
+
+alter Table questao
+add column  id_alternativa_fk bigint references alternativa;
+
+alter Table resultado
+add column  id_estudante_fk bigint references auth.users;
+
+alter Table resultado
+add column  id_atividade_fk bigint references atividade;
          ~~~
    </details>
 
