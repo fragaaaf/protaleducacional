@@ -60,7 +60,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    - [x] Mentoria:
   </details>
   <details>
-  <summary>- [ ] 16 - Agendada</summary>
+  <summary>- [x] 16 - Realizada</summary>
    
    - [x] Mentoria:
    </details>
