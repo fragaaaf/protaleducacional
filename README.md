@@ -62,27 +62,27 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [x] 16 - Realizada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria: Realizada
+   - [x] Pesquisa e visualização dos [vídeos](
    </details>
   <details>
-  <summary>- [ ] 15 - Agendada</summary>
+  <summary>- [x] 15 - Cancelada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria: Cancelada
+   - [x] Feita a leitura da documentação, mas sem sucesso. 
    </details>
    </details>
    <DETAILS>
      <SUMMARY>SEMANA DE 08-14</SUMMARY>
     
   <details>
-  <summary>- [ ] 12 - Agendada</summary>
+  <summary>- [x] 12 - Realizada</summary>
    
    - [ ] Mentoria:
    - [x] 11/01/2024  - Relacionar as chaves estrangeiras do estudante e do professor com o schema auth.users
    - [x] Compartilhar projeto com Arthur.Henrique.Della.Fraga@gmail.com
-   - [ ] Baixar o POSTMAN e estudar a geração de requisições http.
-   - [ ] Gerar requisições(estudar)
-   - [ ] Gerar politicas: 
-        - [ ] tb_x: select,   insert,   update,   delete 
+   - [x] Baixar o POSTMAN e estudar a geração de requisições http.{sem sucesso}
+   - [x] Gerar requisições(estudar){sem sucesso}
    </details>
   <details>
   <summary>- [x] 11 - Agendada</summary>
@@ -461,3 +461,33 @@ Table alternativa {
 * [Criando um arquivo Markdown com links internos](  https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
 * [Guia básico de Markdown](  https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
 * [Uso do Markdown no VSCode](  https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,  markdown%20ou%20md%20e%20pronto!)
+* [Curso testando APIs do Zero -Aula 1 (11m39s) - Canal Pessonizando](https://youtu.be/8KsDpCpUPqI?si=8tJt65Ypy1uHutDd)
+
+##Curso testando uma API do zero: criando um GET no Postman - Aula 2 [6m08s]
+###Canal Pessonizando
+https://youtu.be/T_GNDDshSD8?si=uA6vdfZYQNe0uhO8
+GET não tem corpo(body)
+
+##Curso testando uma API do zero: criando um POST no Postman - Aula 3 [6m18s]
+###Canal Pessonizando
+https://youtu.be/uImHd39Rmyg?si=XtAWb7y9N7sP2h6r
+
+##Curso testando uma API do zero: criando um PUT no Postman - Aula 4 [7m19s] 
+###Canal Pessonizando
+https://youtu.be/uOTrSr361ic?si=R2DK4PEDBDb5V6p8
+Verificar o código de resposta. 
+
+##Curso testando uma API do zero: criando um DELETE no Postman - Aula 5 [3m51s]
+###Canal Pessonizando
+https://youtu.be/kfyAAVw-pTI?si=nexlMAd7pVhVLLgq
+Verificar o código e
+Ler a mensagem de resposta.
+
+##Curso testando uma API do zero: autenticação Basic Auth no Postman - Aula 6 [9m05s]
+###Canal Pessonizando
+https://youtu.be/qYxeMAE5DEY?si=8ETIY9qliBjLoeVt
+A requisição precisa de uma autenticação do tipo Basic Auth com login e senha. 
+
+##Curso testando uma API do zero: como executar todos os testes de uma vez - Aula 7 [3m57s]
+###Canal Pessonizando
+https://youtu.be/J96kOBhP2-s?si=ORSJQwhl_WEgL8WE
