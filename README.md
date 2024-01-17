@@ -62,9 +62,15 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [x] 16 - Realizada</summary>
    
-   - [x] Mentoria: Realizada
-   - [x] Pesquisa e visualização dos [vídeos](#videos)
-   </details>
+   - [x] Mentoria: Realizada  
+   - [x] Pesquisa e visualização dos [vídeos](#videos)  
+   - [X] Configuração da Variaveis API_URL(endereço do banco) e APIKEY(Chave de autorização pública)  
+   - [x] Criadas e testadas as requisições para:  
+     - [x] GET (READ)  
+     - [x] POST (CREATE/INSERT)  
+     - [X] PATCH (UPDATE)  
+     - [X] DEL(DELETE)  
+   </details>  
   <details>
   <summary>- [x] 15 - Cancelada</summary>
    
