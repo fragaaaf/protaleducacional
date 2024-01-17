@@ -460,7 +460,7 @@ Table alternativa {
 
 * [Criando um arquivo Markdown com links internos](  https://medium.com/thiagogmta/criando-um-arquivo-markdown-com-links-internos-3ad5da825ccd)
 * [Guia básico de Markdown](  https://docs.pipz.com/central-de-ajuda/learning-center/guia-basico-de-markdown#open)
-* [Uso do Markdown no VSCode](  https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,  markdown%20ou%20md%20e%20pronto!)
+* [Uso do Markdown no VSCode](https://dev.to/azure/escrita-eficiente-de-artigos-com-vscode-1am4#:~:text=Escrevendo%20Arquivos%20Markdown,markdown%20ou%20md%20e%20pronto!)
    <a id="videos"></a>
 * [Curso testando APIs do Zero -Aula 1 (11m39s) - Canal Pessonizando](https://youtu.be/8KsDpCpUPqI?si=8tJt65Ypy1uHutDd)
 * [Curso testando uma API do zero: criando um GET no Postman - Aula 2 (6m08s) - Canal Pessonizando](https://youtu.be/T_GNDDshSD8?si=uA6vdfZYQNe0uhO8)
