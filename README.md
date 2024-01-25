@@ -31,19 +31,25 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    </details>
    
   <details>
-  <summary>- [ ] 25 - Agendada</summary>
+  <summary>- [ ] 24 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria: REALIZADA
+   - [ ] Definido as tarefas:
+     - [ ]  Configurar Auth na collection e fazer as requisições herdarem essa configuração
+       - [ ] Configurado Auth no Colletion
+       - [ ] Requisições funicionando pelo postman 
+     - [ ]  Tornar referencias e nomeclatura das tabelas para Captalize CamelCase
+     - [ ]  Criar novo repositório no Github (e compartilhar acesso) 
    </details>
   <details>
   <summary>- [ ] 23 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria:SEM MENTORIA(Férias do Estudante)
    </details>
   <details>
   <summary>- [ ] 22 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria: SEM MENTORIA(Férias do Estudante)
    </details>
    </details>
     <DETAILS>
@@ -52,12 +58,12 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
   <details>
   <summary>- [ ] 19 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria: SEM MENTORIA(Férias do Estudante)
   </details>
   <details>
   <summary>- [ ] 18 - Agendada</summary>
    
-   - [x] Mentoria:
+   - [x] Mentoria:SEM MENTORIA(Férias do Estudante)
   </details>
   <details>
   <summary>- [x] 16 - Realizada</summary>
