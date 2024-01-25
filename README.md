@@ -35,19 +35,21 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
    
    - [x] Mentoria: REALIZADA
    - [ ] Definido as tarefas:
-     - [ ]  Configurar Auth na collection e fazer as requisições herdarem essa configuração
-       - [ ] Configurado Auth no Colletion
-       - [ ] Requisições funicionando pelo postman 
-     - [ ]  Tornar referencias e nomeclatura das tabelas para Captalize CamelCase
+     - [x]  Configurar Auth na collection e fazer as requisições herdarem essa configuração
+       - [x] Configurado Auth no Colletion
+       - [x] Requisições funicionando pelo postman 
+     - [x]  Tornar referencias e nomeclatura das tabelas para Captalize CamelCase
+     - [x] Instalado o Node.js no Debian (sudo apt install nodejs npm -y)
+     - [ ] Seguindo o roteiro de ![Tollpad](https://mui.com/toolpad/getting-started/installation/)
      - [ ]  Criar novo repositório no Github (e compartilhar acesso) 
    </details>
   <details>
-  <summary>- [ ] 23 - Agendada</summary>
+  <summary>- [ ] 23 -Cancelada</summary>
    
    - [x] Mentoria:SEM MENTORIA(Férias do Estudante)
    </details>
   <details>
-  <summary>- [ ] 22 - Agendada</summary>
+  <summary>- [ ] 22 - Cancelada</summary>
    
    - [x] Mentoria: SEM MENTORIA(Férias do Estudante)
    </details>
@@ -56,12 +58,12 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
      <SUMMARY>SEMANA DE 15-21</SUMMARY>
     
   <details>
-  <summary>- [ ] 19 - Agendada</summary>
+  <summary>- [ ] 19 - Cancelada</summary>
    
    - [x] Mentoria: SEM MENTORIA(Férias do Estudante)
   </details>
   <details>
-  <summary>- [ ] 18 - Agendada</summary>
+  <summary>- [ ] 18 -Cancelada</summary>
    
    - [x] Mentoria:SEM MENTORIA(Férias do Estudante)
   </details>
