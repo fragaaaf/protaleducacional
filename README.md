@@ -25,7 +25,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
      <SUMMARY>SEMANA DE 22-28</SUMMARY>
     
   <details>
-  <summary>- [ ] 26 - Agendada</summary>
+  <summary>- [ ] 25 - Agendada</summary>
    
    - [x] Mentoria:
    </details>
@@ -41,7 +41,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
      - [x]  Tornar referencias e nomeclatura das tabelas para Captalize CamelCase
      - [x] Instalado o Node.js no Debian ![video de 1 minuto](https://youtu.be/oNBb0NnQGYg?si=WG4cuY9bZ7mVQdCJ)
      - [x] Seguindo o roteiro de ![Tollpad](https://mui.com/toolpad/getting-started/installation/)
-     - [ ]  Criar novo repositório no Github (e compartilhar acesso) 
+     - [x]  Criar novo repositório no Github[no site] (e compartilhar acesso). 
    </details>
   <details>
   <summary>- [ ] 23 -Cancelada</summary>
@@ -483,4 +483,5 @@ Table alternativa {
 * [Curso testando uma API do zero: criando um DELETE no Postman - Aula 5 (3m51s) - Canal Pessonizando](https://youtu.be/kfyAAVw-pTI?si=nexlMAd7pVhVLLgq)
 * [Curso testando uma API do zero: autenticação Basic Auth no Postman - Aula 6 (9m05s) - Canal Pessonizando](https://youtu.be/qYxeMAE5DEY?si=8ETIY9qliBjLoeVt)
 * [Curso testando uma API do zero: como executar todos os testes de uma vez - Aula 7 (3m57s) - Canal Pessonizando](https://youtu.be/J96kOBhP2-s?si=ORSJQwhl_WEgL8WE)
+* ![CODAQUI.dev GitHub Start] (https://www.codaqui.dev/trilhas/github-starter/)
   
