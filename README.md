@@ -39,7 +39,7 @@ Projeto de geração e análise de avaliação para acompanhamento do desempenho
        - [x] Configurado Auth no Colletion
        - [x] Requisições funicionando pelo postman 
      - [x]  Tornar referencias e nomeclatura das tabelas para Captalize CamelCase
-     - [x] Instalado o Node.js no Debian (sudo apt install nodejs npm -y)
+     - [x] Instalado o Node.js no Debian ![video de 1 minuto](https://youtu.be/oNBb0NnQGYg?si=WG4cuY9bZ7mVQdCJ)
      - [ ] Seguindo o roteiro de ![Tollpad](https://mui.com/toolpad/getting-started/installation/)
      - [ ]  Criar novo repositório no Github (e compartilhar acesso) 
    </details>
